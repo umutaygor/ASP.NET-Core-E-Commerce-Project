@@ -13,9 +13,9 @@ namespace DataAccessLayer.Repositories
     {
         public void Delete(T entity)
         {
-            using var c = new Context();
-            c.Remove(entity);
-            c.SaveChanges();
+            using var context = new Context();
+            context.Remove(entity);
+            context.SaveChanges();
         }
 
         public T GetByID(int ID)
