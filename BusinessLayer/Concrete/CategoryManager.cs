@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using System;
@@ -11,34 +12,37 @@ namespace BusinessLayer.Concrete
 {
     public class CategoryManager : ICategoryService
     {
-        EfCategoryRepository efCategoryRepository;
-        public CategoryManager()
+
+        // Dependency Injection applied, We could create a new instance of EfCategoryRepository but in that case we would depend on EntityFramework only
+         
+        ICategoryDal _categoryDal;
+        public CategoryManager(ICategoryDal categoryDal)
         {
-            efCategoryRepository = new EfCategoryRepository();
+            _categoryDal = categoryDal;
         }
         public void AddCategory(Category category)
         {
-            efCategoryRepository.Insert(category);
+            _categoryDal.Insert(category);
         }
 
         public Category GetByID(int ID)
         {
-            return efCategoryRepository.GetByID(ID);
+            return _categoryDal.GetByID(ID);
         }
 
         public List<Category> ListAll()
         {
-            return efCategoryRepository.ListAll();
+            return _categoryDal.ListAll();
         }
 
         public void RemoveCategory(Category category)
         {
-            efCategoryRepository.Delete(category);
+            _categoryDal.Delete(category);
         }
 
         public void UpdateCategory(Category category)
         {
-            efCategoryRepository.Update(category);
+            _categoryDal.Update(category);
         }
     }
 }
