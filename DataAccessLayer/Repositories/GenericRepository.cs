@@ -1,6 +1,5 @@
 ﻿using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
-using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories
 {
-    public class ProductRepository<T> : IGenericDal<T> where T:class
+    public class GenericRepository<T> : IGenericDal<T> where T : class
     {
         public void Delete(T entity)
         {
