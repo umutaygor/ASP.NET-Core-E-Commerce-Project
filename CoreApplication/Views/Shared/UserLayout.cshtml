@@ -38,12 +38,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="row">
                 <div class="col-md-4 logo text-left">
                     <a class="navbar-brand" href="index.html">
-                        <i class="fab fa-linode"></i> Weblog
+                        <i class="fab fa-linode"></i> Anka Legacy
                     </a>
                 </div>
 
                 <!-- TopPageInfoPartialView -->
-                @await Html.PartialAsync("~/Views/Shared/PartialViews/TopPageInfoPartialView.cshtml")
+                @await Html.PartialAsync("~/Views/Shared/UserLayoutPartialViews/TopPageInfoPartialView.cshtml")
 
                 <div class="col-md-4 log-icons text-right">
 
@@ -78,19 +78,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
         <!-- Header Partial View-->
 
-        @await Html.PartialAsync("~/Views/Shared/PartialViews/HeaderPartialView.cshtml")
+        @await Html.PartialAsync("~/Views/Shared/UserLayoutPartialViews/HeaderPartialView.cshtml")
 
     </header>
-    <!--//header-->
-    <!--/banner-->
-    <div class="banner-inner">
-    </div>
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-            <a href="index.html">Home</a>
-        </li>
-        <li class="breadcrumb-item active">Blog3</li>
-    </ol>
+    
     <!--//banner-->
     <!--/main-->
     <!-- main section was here-->
@@ -99,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!--//main-->
     
     <!-- Footer Partial View-->
-    @await Html.PartialAsync("~/Views/Shared/PartialViews/FooterPartialView.cshtml")
+    @await Html.PartialAsync("~/Views/Shared/UserLayoutPartialViews/FooterPartialView.cshtml")
 
     <!---->
     <!-- js -->

@@ -153,6 +153,9 @@ C:\Users\umuta\source\repos\CoreApplication\CoreApplication\bin\Debug\net5.0\run
 C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
 C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Shared\UserLayout.cshtml.g.cs
 C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
-C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Shared\PartialViews\FooterPartialView.cshtml.g.cs
-C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Shared\PartialViews\HeaderPartialView.cshtml.g.cs
-C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Shared\PartialViews\TopPageInfoPartialView.cshtml.g.cs
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Product\ProductReadAll.cshtml.g.cs
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Shared\UserLayoutPartialViews\FooterPartialView.cshtml.g.cs
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Shared\UserLayoutPartialViews\HeaderPartialView.cshtml.g.cs
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Shared\UserLayoutPartialViews\TopPageInfoPartialView.cshtml.g.cs
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Comment\PartialAddComment.cshtml.g.cs
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Comment\CommentListPartialView.cshtml.g.cs
