@@ -32,6 +32,7 @@ namespace BusinessLayer.Concrete
             return _productDal.GetProductListWithCategory();
         }
 
+     
         public List<Product> ListAll()
         {
             return _productDal.ListAll();

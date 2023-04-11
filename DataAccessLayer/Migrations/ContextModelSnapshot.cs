@@ -139,9 +139,6 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<bool>("BlogStatus")
-                        .HasColumnType("bit");
-
                     b.Property<int>("CategoryID")
                         .HasColumnType("int");
 
@@ -157,12 +154,20 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("ProductName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("ProductStatus")
+                        .HasColumnType("bit");
+
                     b.Property<string>("ProductThumbnailImage")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SupplierID")
+                        .HasColumnType("int");
 
                     b.HasKey("ProductID");
 
                     b.HasIndex("CategoryID");
+
+                    b.HasIndex("SupplierID");
 
                     b.ToTable("Products");
                 });
@@ -192,6 +197,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<bool>("SupplierStatus")
                         .HasColumnType("bit");
 
+                    b.Property<string>("SupplierThumbnailImage")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("SupplierID");
 
                     b.ToTable("Suppliers");
@@ -216,7 +224,15 @@ namespace DataAccessLayer.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("EntityLayer.Concrete.Supplier", "Supplier")
+                        .WithMany("Products")
+                        .HasForeignKey("SupplierID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Category");
+
+                    b.Navigation("Supplier");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Category", b =>
@@ -227,6 +243,11 @@ namespace DataAccessLayer.Migrations
             modelBuilder.Entity("EntityLayer.Concrete.Product", b =>
                 {
                     b.Navigation("Comments");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Supplier", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

@@ -12,7 +12,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString: @"Server=DESKTOP-BJ42D4G\UMUT;Database=EcommerceDb;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(connectionString: @"Server=DESKTOP-BJ42D4G\UMUT;Database=EcommerceDb3;Trusted_Connection=true");
         }
 
         public DbSet<About> Abouts { get; set; }

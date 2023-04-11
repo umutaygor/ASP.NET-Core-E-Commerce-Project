@@ -20,5 +20,9 @@ namespace DataAccessLayer.EntityFramework
                 return context.Products.Include(x => x.Category).ToList();
             }
         }
+       
+
+        
+        }
     }
-}
+

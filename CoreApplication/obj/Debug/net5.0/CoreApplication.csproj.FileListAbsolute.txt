@@ -159,3 +159,9 @@ C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Raz
 C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Shared\UserLayoutPartialViews\TopPageInfoPartialView.cshtml.g.cs
 C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Comment\PartialAddComment.cshtml.g.cs
 C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Comment\CommentListPartialView.cshtml.g.cs
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Shared\Components\CommentListByProduct\Default.cshtml.g.cs
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Register\Index.cshtml.g.cs
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\CoreApplication.MvcApplicationPartsAssemblyInfo.cs

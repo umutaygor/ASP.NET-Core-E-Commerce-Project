@@ -16,6 +16,8 @@ namespace EntityLayer.Concrete
         public string SupplierMail { get; set; }
         public string SupplierPassword { get; set; }
         public string SupplierImage { get; set; }
+        public string SupplierThumbnailImage { get; set; }
         public bool SupplierStatus { get; set; }
+        public List<Product> Products { get; set; }
     }
 }

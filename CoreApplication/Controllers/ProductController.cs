@@ -18,6 +18,7 @@ namespace CoreApplication.Controllers
         }
         public IActionResult ProductReadAll(int ID)
         {
+            ViewBag.ID = ID;
             var values = productmanager.GetByID(ID);
             return View(values);
         }

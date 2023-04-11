@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "QL+ZPo1+n02w+DomUv9kuhJQEpYoekYGLvt2AfWRm1PIk2S5sVII25LmfMURr8st6uyndhz4NjSMh/jrONxNTg==",
+  "dgSpecHash": "9CHFd8F9gDsOlkSZ/UyCyqjHzfz39XdIELpQJX4CT0XOpLX7+/kTSRMI9N0MlK+XMKqKwkPiVNKEE5v4QbvbVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\umuta\\source\\repos\\CoreApplication\\CoreApplication\\CoreApplication.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\umuta\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\umuta\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\umuta\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\umuta\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\umuta\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\umuta\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

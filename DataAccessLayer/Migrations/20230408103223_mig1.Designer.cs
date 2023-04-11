@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230313190028_migration1")]
-    partial class migration1
+    [Migration("20230408103223_mig1")]
+    partial class mig1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -94,7 +94,12 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("CommentUsername")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("ProductID")
+                        .HasColumnType("int");
+
                     b.HasKey("CommentID");
+
+                    b.HasIndex("ProductID");
 
                     b.ToTable("Comments");
                 });
@@ -136,8 +141,8 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<bool>("BlogStatus")
-                        .HasColumnType("bit");
+                    b.Property<int>("CategoryID")
+                        .HasColumnType("int");
 
                     b.Property<string>("ProductContent")
                         .HasColumnType("nvarchar(max)");
@@ -151,10 +156,20 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("ProductName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("ProductStatus")
+                        .HasColumnType("bit");
+
                     b.Property<string>("ProductThumbnailImage")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("SupplierID")
+                        .HasColumnType("int");
+
                     b.HasKey("ProductID");
+
+                    b.HasIndex("CategoryID");
+
+                    b.HasIndex("SupplierID");
 
                     b.ToTable("Products");
                 });
@@ -184,9 +199,57 @@ namespace DataAccessLayer.Migrations
                     b.Property<bool>("SupplierStatus")
                         .HasColumnType("bit");
 
+                    b.Property<string>("SupplierThumbnailImage")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("SupplierID");
 
                     b.ToTable("Suppliers");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Comment", b =>
+                {
+                    b.HasOne("EntityLayer.Concrete.Product", "Product")
+                        .WithMany("Comments")
+                        .HasForeignKey("ProductID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Product", b =>
+                {
+                    b.HasOne("EntityLayer.Concrete.Category", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EntityLayer.Concrete.Supplier", "Supplier")
+                        .WithMany("Products")
+                        .HasForeignKey("SupplierID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("Supplier");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Category", b =>
+                {
+                    b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Product", b =>
+                {
+                    b.Navigation("Comments");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Supplier", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

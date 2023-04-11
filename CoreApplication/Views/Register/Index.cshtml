@@ -1,0 +1,75 @@
+﻿@model EntityLayer.Concrete.Supplier
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<section class="main-content-w3layouts-agileits">
+    <div class="container">
+        <h3 class="tittle">Shop Registration</h3>
+        <div class="inner-sec">
+            <div class="login p-5 bg-light mx-auto mw-100">
+                @using (Html.BeginForm("Index","Register",FormMethod.Post)) { 
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+
+                            <label for="validationCustom01">Shop Name</label>
+                            @Html.TextBoxFor(x => x.SupplierName)
+                            @Html.ValidationMessageFor(x => x.SupplierName)
+                            @*<input type="text" class="form-control" id="validationDefault01" name="SupplierName" placeholder="" required="">*@
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+
+                            <label for="validationCustom01">Shop Description</label>
+                            @Html.TextBoxFor(x => x.SupplierAbout)
+                            @Html.ValidationMessageFor(x => x.SupplierAbout)
+                            @*<input type="text" class="form-control" id="validationDefault01" name="SupplierAbout" placeholder="" required="">*@
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom01">Shop Image</label>
+                            @Html.TextBoxFor(x => x.SupplierImage)
+                            @Html.ValidationMessageFor(x => x.SupplierImage)
+                            @*<input type="text" class="form-control" id="validationDefault01" name="SupplierImage" placeholder="" required="">*@
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom02">Seller Mail</label>
+                            @Html.TextBoxFor(x => x.SupplierMail)
+                            @Html.ValidationMessageFor(x => x.SupplierMail)
+                            @*<input type="text" class="form-control" id="validationDefault02" name="SupplierMail" placeholder="" required="">*@
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword1 mb-2">Password</label>
+                            @Html.TextBoxFor(x => x.SupplierPassword)
+                            @Html.ValidationMessageFor(x => x.SupplierPassword)
+                            @*<input type="password" class="form-control" id="password1" name="SupplierPassword" placeholder="" required="">*@
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword2 mb-2">Confirm Password</label>
+                            <input type="password" class="form-control" id="password2" placeholder="" >
+                        </div>
+                      
+                    </div>
+                    <button type="submit" class="btn btn-primary submit mb-4">Register</button>
+                    <p>
+                        <a href="#" id="terms">By clicking Signup, I agree to your terms</a>
+                    </p>
+               }
+
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#terms').click(function () {
+            swal("1-) Use of Website: Our website is intended for personal, non-commercial use only. You may not use our website for any unlawful purpose or in a way that may damage our website or interfere with its normal functioning.");
+        });
+    </script>
+</section>
+
+
