@@ -18,36 +18,36 @@
                         <div class="col-md-6 mb-3">
 
                             <label for="validationCustom01">Shop Name</label>
-                            @Html.TextBoxFor(x => x.SupplierName)
-                            @Html.ValidationMessageFor(x => x.SupplierName)
+                            @Html.TextBoxFor(x => x.SupplierName,new {@class="form-control" } )
+                            @Html.ValidationMessageFor(x => x.SupplierName,"",new {@class="text-danger" })
                             @*<input type="text" class="form-control" id="validationDefault01" name="SupplierName" placeholder="" required="">*@
                         </div>
 
                         <div class="col-md-6 mb-3">
 
                             <label for="validationCustom01">Shop Description</label>
-                            @Html.TextBoxFor(x => x.SupplierAbout)
-                            @Html.ValidationMessageFor(x => x.SupplierAbout)
+                            @Html.TextBoxFor(x => x.SupplierAbout, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.SupplierAbout, "", new { @class = "text-danger" })
                             @*<input type="text" class="form-control" id="validationDefault01" name="SupplierAbout" placeholder="" required="">*@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationCustom01">Shop Image</label>
-                            @Html.TextBoxFor(x => x.SupplierImage)
-                            @Html.ValidationMessageFor(x => x.SupplierImage)
+                            @Html.TextBoxFor(x => x.SupplierImage, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.SupplierImage, "", new { @class = "text-danger" })
                             @*<input type="text" class="form-control" id="validationDefault01" name="SupplierImage" placeholder="" required="">*@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationCustom02">Seller Mail</label>
-                            @Html.TextBoxFor(x => x.SupplierMail)
-                            @Html.ValidationMessageFor(x => x.SupplierMail)
+                            @Html.TextBoxFor(x => x.SupplierMail, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.SupplierMail, "", new { @class = "text-danger" })
                             @*<input type="text" class="form-control" id="validationDefault02" name="SupplierMail" placeholder="" required="">*@
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="exampleInputPassword1 mb-2">Password</label>
-                            @Html.TextBoxFor(x => x.SupplierPassword)
-                            @Html.ValidationMessageFor(x => x.SupplierPassword)
+                            @Html.TextBoxFor(x => x.SupplierPassword, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.SupplierPassword, "", new { @class = "text-danger" })
                             @*<input type="password" class="form-control" id="password1" name="SupplierPassword" placeholder="" required="">*@
                         </div>
                         <div class="form-group col-md-6">
@@ -67,7 +67,7 @@
     </div>
     <script>
         $('#terms').click(function () {
-            swal("1-) Use of Website: Our website is intended for personal, non-commercial use only. You may not use our website for any unlawful purpose or in a way that may damage our website or interfere with its normal functioning.");
+            swal("Agreement Terms and Conditions","1-) Use of Website: Our website is intended for personal, non-commercial use only. You may not use our website for any unlawful purpose or in a way that may damage our website or interfere with its normal functioning.");
         });
     </script>
 </section>
