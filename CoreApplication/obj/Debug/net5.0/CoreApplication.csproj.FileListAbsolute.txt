@@ -167,3 +167,7 @@ C:\Users\umuta\source\repos\CoreApplication\CoreApplication\bin\Debug\net5.0\Flu
 C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\CoreApplication.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
 C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Shared\Components\OtherProductsFromSupplier\Default.cshtml.g.cs
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\ErrorPage\Error1.cshtml.g.cs
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\About\Index.cshtml.g.cs
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\About\SocialMediaAbout.cshtml.g.cs
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Contact\Index.cshtml.g.cs
