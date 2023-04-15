@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -8,8 +9,10 @@ using System.Threading.Tasks;
 
 namespace CoreApplication.Controllers
 {
+    [AllowAnonymous]
     public class ProductController : Controller
     {
+       
         ProductManager productmanager = new ProductManager(new EfProductRepository());
         public IActionResult Index()
         {

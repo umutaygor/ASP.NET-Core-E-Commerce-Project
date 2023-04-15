@@ -171,3 +171,5 @@ C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Raz
 C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\About\Index.cshtml.g.cs
 C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\About\SocialMediaAbout.cshtml.g.cs
 C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Contact\Index.cshtml.g.cs
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Supplier\Index.cshtml.g.cs
+C:\Users\umuta\source\repos\CoreApplication\CoreApplication\obj\Debug\net5.0\Razor\Views\Shared\Components\Last3Products\Default.cshtml.g.cs

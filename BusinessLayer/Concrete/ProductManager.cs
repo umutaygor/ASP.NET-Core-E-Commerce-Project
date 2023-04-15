@@ -27,6 +27,11 @@ namespace BusinessLayer.Concrete
             return _productDal.GetByID(ID);
         }
 
+        public List<Product> GetProductListBySupplier(int ID)
+        {
+            return _productDal.ListAll(x => x.SupplierID==ID);
+        }
+
         public List<Product> GetProductListWithCategory()
         {
             return _productDal.GetProductListWithCategory();
@@ -36,6 +41,11 @@ namespace BusinessLayer.Concrete
         public List<Product> ListAll()
         {
             return _productDal.ListAll();
+        }
+
+        public List<Product> GetLast3Products()
+        {
+            return _productDal.ListAll().TakeLast(3).ToList();
         }
 
         public void RemoveProduct(Product product)
